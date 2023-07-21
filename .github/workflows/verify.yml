@@ -16,7 +16,6 @@ jobs:
         uses: actions/checkout@v2
       - uses: dtolnay/rust-toolchain@stable
         with:
-          profile: minimal
           toolchain: stable
           components: rustfmt, clippy
       - name: Annotate commit with clippy warnings
